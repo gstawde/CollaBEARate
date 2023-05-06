@@ -1,0 +1,72 @@
+/*
+ * Copyright Gargi Tawde (c) 2023.
+ */
+
+/* COLOR SCHEME HEXCODES
+Black: #000000
+Brown: #7D451B
+Pink: #E83F6F
+Yellow: #FDCA40
+Orange: #F79824
+Blue: #5C9EAD
+ */
+
+/* IMPORT DYNAPUFF FONT FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'DynaPuff', cursive;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+
+.userauth-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: 'DynaPuff';
+
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    margin: 10px;
+}
+
+.login {
+    background-color: #FFFFFF;
+    color: #5C9EAD;
+}
+
+.login:hover {
+    background-color: #5C9EAD;
+    color: #FFFFFF;
+}
+
+.signup {
+    background-color: #FFFFFF;
+    color: #E83F6F;
+}
+
+.signup:hover {
+    background-color: #E83F6F;
+    color: #FFFFFF;
+
+}
+

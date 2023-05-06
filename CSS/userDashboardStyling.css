@@ -1,0 +1,48 @@
+/*
+ * Copyright Gargi Tawde (c) 2023.
+ */
+
+/* COLOR SCHEME HEXCODES
+Black: #000000
+Brown: #7D451B
+Pink: #E83F6F
+Yellow: #FDCA40
+Orange: #F79824
+Blue: #5C9EAD
+ */
+
+/* IMPORT DYNAPUFF FONT FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
+
+ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+
+li a {
+    background-color: #000;
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 17px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+/* Change the link color to #111 (black) on hover */
+.sign-out:hover {
+    background-color: #7D451B;
+}

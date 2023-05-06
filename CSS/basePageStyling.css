@@ -1,0 +1,19 @@
+/*
+ * Copyright Gargi Tawde (c) 2023.
+ */
+
+/* COLOR SCHEME HEXCODES
+Black: #000000
+Brown: #7D451B
+Pink: #E83F6F
+Yellow: #FDCA40
+Orange: #F79824
+Blue: #5C9EAD
+ */
+
+/* IMPORT DYNAPUFF FONT FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'DynaPuff', cursive;
+}
