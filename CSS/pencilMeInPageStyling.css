@@ -1,0 +1,84 @@
+/*
+ * Copyright Gargi Tawde (c) 2023.
+ */
+
+/* COLOR SCHEME HEXCODES
+Black: #000000
+Brown: #AF7952
+Pink: #E83F6F
+Yellow: #FDCA40
+Orange: #F79824
+Blue: #5C9EAD
+ */
+
+/* IMPORT DYNAPUFF FONT FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'DynaPuff', cursive;
+    overflow-y: scroll;
+}
+
+/* NAVBAR */
+ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar-logo-word {
+    height: 1%;
+    width: 7%;
+    padding: 8px 17px;
+}
+li {
+    float: right;
+}
+li a {
+    background-color: #000;
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 23px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 8px;
+    border-radius: 12px;
+    transition-duration: 0.3s;
+}
+.sign-out:hover {
+    background-color: #AF7952;
+}
+.projects:hover {
+    background-color: #5C9EAD;
+}
+.pencil-me-in {
+    background-color: #FDCA40;
+}
+.backlog:hover {
+    background-color: #F79824;
+}
+.account:hover {
+    background-color: #E83F6F;
+}
+/* END NAVBAR */
+
+/* PAGE FOOTER */
+.page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+}
+.page-footer-logo {
+    padding: 5px;
+    height: 7%;
+    width: 15%;
+}
+/* END PAGE FOOTER */
