@@ -4,7 +4,7 @@
 
 /* COLOR SCHEME HEXCODES
 Black: #000000
-Brown: #7D451B
+Brown: #AF7952
 Pink: #E83F6F
 Yellow: #FDCA40
 Orange: #F79824
@@ -16,7 +16,9 @@ Blue: #5C9EAD
 
 body {
     font-family: 'DynaPuff', cursive;
+    overflow-y: scroll;
 }
+
 
 img {
     height: 50%;
@@ -51,21 +53,21 @@ button {
 
 .login {
     background-color: #FFFFFF;
-    color: #5C9EAD;
+    color: #AF7952;
 }
 
 .login:hover {
-    background-color: #5C9EAD;
+    background-color: #AF7952;
     color: #FFFFFF;
 }
 
 .signup {
     background-color: #FFFFFF;
-    color: #E83F6F;
+    color: #AF7952;
 }
 
 .signup:hover {
-    background-color: #E83F6F;
+    background-color: #AF7952;
     color: #FFFFFF;
 
 }

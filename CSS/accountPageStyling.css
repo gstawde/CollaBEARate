@@ -4,7 +4,7 @@
 
 /* COLOR SCHEME HEXCODES
 Black: #000000
-Brown: #B8764B
+Brown: #AF7952
 Pink: #E83F6F
 Yellow: #FDCA40
 Orange: #F79824
@@ -38,7 +38,7 @@ li {
     float: right;
 }
 li a {
-    background-color: #000;
+    background-color: #000000;
 
     display: block;
     color: white;
@@ -51,7 +51,7 @@ li a {
     transition-duration: 0.3s;
 }
 .sign-out:hover {
-    background-color: #B8764B;
+    background-color: #AF7952;
 }
 .projects:hover {
     background-color: #5C9EAD;
@@ -62,7 +62,7 @@ li a {
 .backlog:hover {
     background-color: #F79824;
 }
-.account:hover {
+.account {
     background-color: #E83F6F;
 }
 /* END NAVBAR */
