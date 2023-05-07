@@ -92,8 +92,8 @@ li a {
 }
 .page-footer-logo {
     padding: 5px;
-    height: 7%;
-    width: 15%;
+    height: 3%;
+    width: 8%;
 }
 /* END PAGE FOOTER */
 
@@ -118,6 +118,7 @@ li a {
     margin-right: auto;
     /*margin-top: 3%;*/
     border-radius: 8px;
+    margin-bottom: 7%;
 }
 .kanban * {
     font-family: 'DynaPuff', cursive;

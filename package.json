@@ -1,0 +1,7 @@
+{
+  "name": "CollaBEARate",
+  "version": "1.0.0",
+  "dependencies": {
+    "module": "*"
+  }
+}
