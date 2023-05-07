@@ -67,6 +67,20 @@ li a {
 }
 /* END NAVBAR */
 
+/* INFO BUTTON */
+#btnShowMsg {
+    border: none;
+    font-size: 35%;
+    font-weight: bolder;
+    color: #F79824;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+}
+#btnShowMsg:hover {
+    opacity: 1;
+}
+/* END INFO BUTTON */
+
 /* PAGE FOOTER */
 .page-footer {
     position: fixed;
@@ -82,3 +96,72 @@ li a {
     width: 15%;
 }
 /* END PAGE FOOTER */
+
+/* Backlog Title */
+.backlog-title {
+    font-size: 45px;
+    color: #F79824;
+    text-align: center;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+/* KANBAN */
+.kanban {
+    display: flex;
+    padding: 30px;
+    /*width: 1500px;*/
+    width: 85%;
+    background-color: #F79824;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 3%;*/
+    border-radius: 8px;
+}
+.kanban * {
+    font-family: 'DynaPuff', cursive;
+}
+.kanban-column {
+    flex: 1;
+}
+.kanban-column:not(:last-child) {
+    /*margin-right: 30px;*/
+    margin-right: 3%;
+}
+.kanban-column-title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #FFFFFF;
+    user-select: none;
+    opacity: 1;
+}
+.kanban-item-input {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    opacity: 0.85;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.kanban-dropzone {
+    height: 10px;
+    transition: background 0.15s, height 0.15s;
+}
+.kanban-dropzone-active {
+    height: 20px;
+    background: rgba(0,0,0,0.25);
+}
+.kanban-add-item {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: rgba(0,0,0,0.1);
+    /*background-color: #F79824;*/
+    /*opacity: 0.6;*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

@@ -10,6 +10,15 @@
     <!-- Import Style Sheets -->
     <link rel="stylesheet" href="../CSS/backlogPageStyling.css">
 
+    <!-- Help message Button -->
+    <script type="text/javascript">
+      function showMessage() {
+        alert("How to use the Backlog:\n1. Click \'+ Add\' to add a new card. Then, click on the empty card to add your desired text." +
+                "\n2. Click and drag cards into different columns to change their status. Refresh the page to see its updated position." +
+                "\n3. If you want to delete an item, double click on the item of choice and confirm your selection.");
+      }
+    </script>
+
     <title>CollaBEARate</title>
   </head>
   <body>
@@ -24,10 +33,16 @@
       <li><a class="projects" href="projectsPage.html">Projects</a></li>
     </ul>
 
+    <!-- KANBAN BOARD -->
+    <p class="backlog-title">The Backlog<input type="button" id="btnShowMsg" value="ⓘ" onClick="showMessage()" /></p>
+    <div class="kanban"></div>
+
     <!-- PAGE FOOTER -->
     <div class="page-footer">
       <p><img class="page-footer-logo" src="../ASSETS/CollaBEARateWORD.png"/></p>
     </div>
+
+    <script src="../JS/main.js" type="module"></script>
 
   </body>
 </html>
