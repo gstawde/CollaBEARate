@@ -5,11 +5,6 @@
 // Saving Data from the Form on pencilMeInPage.html
 let iCalform = document.getElementById('iCalform');
 
-/**
- * Create and download a file on click
- * @params {string} filename - The name of the file with the ending
- * @params {string} filebody - The contents of the file
- */
 function download(filename, fileBody) {
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(fileBody));
@@ -24,11 +19,6 @@ function download(filename, fileBody) {
 }
 
 
-/**
- * Returns a date/time in ICS format
- * @params {Object} dateTime - A date object you want to get the ICS format for.
- * @returns {string} String with the date in ICS format
- */
 function convertToICSDate(dateTime) {
     const year = dateTime.getFullYear().toString();
     const month = (dateTime.getMonth() + 1) < 10 ? "0" + (dateTime.getMonth() + 1).toString() : (dateTime.getMonth() + 1).toString();
@@ -40,18 +30,6 @@ function convertToICSDate(dateTime) {
 }
 
 
-/**
- * Creates and downloads an ICS file
- * @params {string} timeZone - In the format America/New_York
- * @params {object} startTime - Vaild JS Date object in the event timezone
- * @params {object} endTime - Vaild JS Date object in the event timezone
- * @params {string} title
- * @params {string} description
- * @params {string} venueName
- * @params {string} address
- * @params {string} city
- * @params {string} state
- */
 function createDownloadICSFile(timezone, startTime, endTime, title, description, meetingLink) {
     const icsBody = 'BEGIN:VCALENDAR\n' +
         'VERSION:2.0\n' +
