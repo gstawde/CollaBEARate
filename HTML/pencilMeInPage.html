@@ -10,6 +10,16 @@
     <!-- Import Style Sheets -->
     <link rel="stylesheet" href="../CSS/pencilMeInPageStyling.css">
 
+    <!-- Help message Button -->
+    <script type="text/javascript">
+      function showMessage() {
+        alert("How to use the Calendar Event Generator:\n\n1. Enter values for the spaces in the form below.\n" +
+                "\n2. When all spaces for input are filled, click the button and the download of an ics file will be initiated." +
+                "\n*IMPORTANT: a lack of enough/improperly formatted information will not generate a working calendar invitation*" +
+                "\n\nFrom there, you can open the file and add it to your personal calendar as well as share with others!");
+      }
+    </script>
+
     <title>CollaBEARate</title>
   </head>
   <body>
@@ -24,10 +34,46 @@
       <li><a class="projects" href="projectsPage.html">Projects</a></li>
     </ul>
 
+    <div class="form-page-content">
+      <h1 class="pencil-me-in-title">Calendar Event Generator<input type="button" id="btnShowMsg" value="ⓘ" onClick="showMessage()" /></h1>
+      <form id="iCalform" name="iCalform">
+        <div class="form-element-spacing">
+          <label for="eventTitle" class="prompt">Event Title:</label><br>
+          <input type="text" id="eventTitle" name="eventTitle" size="100">
+        </div>
+        <div class="form-element-spacing">
+          <label for="eventDescription" class="prompt">Event Description:</label><br>
+          <input type="text" id="eventDescription" name="eventDescription" size="150">
+        </div>
+        <div class="form-element-spacing">
+          <label for="date" class="prompt">Date (format e.g. 'Mar 9, 2001'):</label><br>
+          <input type="text" id="date" name="date" size="100">
+        </div>
+        <div class="form-element-spacing">
+          <label for="startTime" class="prompt">Start Time in 24-hour format and PST timezone (format e.g. '09:12'):</label><br>
+          <input type="text" id="startTime" name="startTime" size="100">
+        </div>
+        <div class="form-element-spacing">
+          <label for="endTime" class="prompt">End Time in 24-hour format and PST timezone (format e.g. '21:12'):</label><br>
+          <input type="text" id="endTime" name="endTime" size="100">
+        </div>
+        <div class="form-element-spacing">
+          <label for="meetingLink" class="prompt">Meeting Link (e.g. 'https://zoom.us...'):</label><br>
+          <input type="text" id="meetingLink" name="meetingLink" size="150">
+        </div>
+        <input type="submit" class="generate-meeting" id="generatemeeting" value="Submit">
+      </form>
+    </div>
+
+
     <!-- PAGE FOOTER -->
     <div class="page-footer">
       <p><img class="page-footer-logo" src="../ASSETS/CollaBEARateWORD.png"/></p>
     </div>
+
+
+
+    <script src="../JS/PencilMeIn.js"></script>
 
   </body>
 </html>
