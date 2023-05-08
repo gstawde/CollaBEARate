@@ -71,7 +71,7 @@ function createDownloadICSFile(timezone, startTime, endTime, title, description,
         'DTEND;TZID=' + timezone + ':' + convertToICSDate(endTime)+ '\n' +
         'DTSTAMP:'+ convertToICSDate(new Date()) + '\n' +
         'LOCATION:' + meetingLink + '\\n' +
-        'DESCRIPTION:' + description + '\n' +
+        description + '\n' +
         'END:VEVENT\n' +
         'END:VCALENDAR\n';
 
