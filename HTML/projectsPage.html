@@ -10,9 +10,100 @@
     <!-- Import Style Sheets -->
     <link rel="stylesheet" href="../CSS/projectsPageStyling.css">
 
+    <!-- Dynamic Table -->
+    <script type="text/javascript">
+      function addRow() {
+
+        var table = document.getElementById('dataTable');
+
+        var rowCount = table.rows.length;
+        var row = table.insertRow(rowCount);
+
+        // Select Checkbox
+        var cell0 = row.insertCell(0);
+        var element0 = document.createElement("input");
+        element0.type = "checkbox";
+        element0.name="chkbox[]";
+        cell0.appendChild(element0);
+
+        // Project Name
+        var cell1 = row.insertCell(1);
+        var element1 = document.createElement("input");
+        element1.type = "text";
+        element1.name = "txtbox[]";
+        cell1.appendChild(element1);
+
+        // Project Details
+        var cell2 = row.insertCell(2);
+        var element2 = document.createElement("input");
+        element2.type = "text";
+        element2.name = "txtbox[]";
+        element2.size = 75;
+        cell2.appendChild(element2);
+
+        // Role
+        var cell3 = row.insertCell(3);
+        var element3 = document.createElement("input");
+        element3.type = "text";
+        element3.name = "txtbox[]";
+        cell3.appendChild(element3);
+
+        // Deadline
+        var cell4 = row.insertCell(4);
+        var element4 = document.createElement("input");
+        element4.type = "text";
+        element4.name = "txtbox[]";
+        cell4.appendChild(element4);
+
+        // Status
+        var cell5 = row.insertCell(5);
+        const range = document.createRange();
+        range.selectNode(document.body);
+        const insert = range.createContextualFragment('          <select>\n' +
+                '            <option value="notstarted">Not Started</option>\n' +
+                '            <option value="inProgress">In Progress</option>\n' +
+                '            <option value="inReview">In Review</option>\n' +
+                '            <option value="complete">Complete</option>\n' +
+                '          </select>\n').children[0];
+        cell5.appendChild(insert);
+
+
+      }
+
+      function deleteRow() {
+        try {
+          var table = document.getElementById('dataTable');
+          var rowCount = table.rows.length;
+
+          for(var i=0; i<rowCount; i++) {
+            var row = table.rows[i];
+            var chkbox = row.cells[0].childNodes[0];
+            if(null != chkbox && true == chkbox.checked) {
+              table.deleteRow(i);
+              rowCount--;
+              i--;
+            }
+
+
+          }
+        }catch(e) {
+          alert(e);
+        }
+      }
+
+    </script>
+    <!-- Help message Button -->
+    <script type="text/javascript">
+      function showMessage() {
+        alert("How to use the Backlog:\n\n1. Add a new row with the \'Add Row\' button, or populate the initial one provided." +
+                "\n2. To delete one or more rows, use the select column to pick which ones you wish to get rid of," +
+                " then select the \'Delete Row\' button.");
+      }
+    </script>
+
     <title>CollaBEARate</title>
   </head>
-  <body>
+  <body >
 
     <!-- NAVBAR -->
     <ul>
@@ -24,10 +115,51 @@
       <li><a class="projects" href="projectsPage.html">Projects</a></li>
     </ul>
 
+    <p class="projects-title">Projects<input type="button" id="btnShowMsg" value="ⓘ" onClick="showMessage()"/></p>
+
+    <table id="dataTable" name="dataTable">
+      <tr class="table-titles" height="30">
+        <th>Select</th>
+        <th>Project Name</th>
+        <th>Project Description</th>
+        <th>Role</th>
+        <th>Deadline</th>
+        <th>Status</th>
+      </tr>
+      <tr height="30">
+        <td><input type="checkbox" name="chk" id="checkbox"/></td>
+        <td contenteditable> <input type="text" id="projectName"/> </td>
+
+        <td contenteditable> <input type="text" id="projectDetails" size="75"/> </td>
+
+        <td contenteditable> <input type="text" id="role"/> </td>
+        <td contenteditable> <input type="text" id="deadline"/> </td>
+        <td contenteditable>
+          <select>
+            <option value="notstarted">Not Started</option>
+            <option value="inProgress">In Progress</option>
+            <option value="inReview">In Review</option>
+            <option value="complete">Complete</option>
+          </select>
+        </td>
+
+      </tr>
+    </table>
+
+    <div class="add-del">
+      <input type="button" value="Add Row" onclick="addRow('dataTable')" />
+      <input type="button" value="Delete Row" onclick="deleteRow('dataTable')" />
+    </div>
+
+<!--    <button id="saveButton">SAVE</button>-->
+
     <!-- PAGE FOOTER -->
     <div class="page-footer">
       <p><img class="page-footer-logo" src="../ASSETS/CollaBEARateWORD.png"/></p>
     </div>
+
+    <script src="../JS/projects.js"></script>
+
 
   </body>
 </html>

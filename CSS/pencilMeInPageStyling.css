@@ -67,6 +67,75 @@ li a {
 }
 /* END NAVBAR */
 
+/* Form Page Content */
+.form-page-content {
+    padding-left: 3%;
+}
+/* END Form Page Content */
+
+/* Pencil Me In Title */
+.pencil-me-in-title {
+    font-size: 45px;
+    color: #FDCA40;
+    text-align: left;
+    line-height: 10px;
+    font-weight: bold;
+    padding-top: 8%;
+}
+/* END Pencil Me In Title */
+
+/* INFO BUTTON */
+#btnShowMsg {
+    border: none;
+    font-size: 35%;
+    font-weight: bolder;
+    color: #FDCA40;
+    background-color: #FFFFFF;
+    opacity: 0.5;
+}
+#btnShowMsg:hover {
+    opacity: 1;
+}
+/* END INFO BUTTON */
+
+/* iCal FORM */
+#iCalform {
+    text-align: left;
+    font-size: 18px;
+}
+.form-element-spacing {
+    padding-bottom: 1%;
+}
+.prompt {
+    font-weight: lighter;
+}
+input[type="text"] {
+    background-color: #FDCA40;
+    opacity: 0.3;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-family: 'DynaPuff', cursive;
+}
+input[type="submit"] {
+    font-family: 'DynaPuff', cursive;
+    background-color: #000;
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    transition-duration: 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #FDCA40;
+}
+/* END iCal Form */
+
 /* PAGE FOOTER */
 .page-footer {
     position: fixed;
