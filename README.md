@@ -3,10 +3,10 @@
 ### An agile workflow/project organization platform
 ## Project Features
 1. Login/Logout
-   2. Current login functionality is hardcoded, as our ideal functionality works standalone and not with the product itself.
-      3. Login credentials:
-         4. username: test0
-         5. password: test
+   - Current login functionality is hardcoded, as our ideal functionality works standalone and not with the product itself.
+   - Login credentials:
+      - username: test0
+      - password: test
 2. Customizable Project List
 3. Meeting Invite Generator *(.ics format)*
 4. Kanban Board
