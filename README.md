@@ -20,3 +20,5 @@
   - Store personal Zoom meeting link under each account so it can simply be pulled when generating meeting in ‘Pencil Me In’ rather than having to manually enter it
 ## Tech Stack
 HTML, CSS, JavaScript
+## Project Repository
+[CollaBEARate Repository](https://github.com/gstawde/CollaBEARate)
