@@ -11,7 +11,7 @@
 3. Meeting Invite Generator *(.ics format)*
 4. Kanban Board
 5. Account Page
-   6. Can only view values for hardcoded account information *(email is email@email.com)*
+   - Can only view values for hardcoded account information *(email is email@email.com)*
 ## Future Features/Improvements
 - Projects
   - Add functionality to store additional data under each project *(e.g. README, assets, Kanban board)*
